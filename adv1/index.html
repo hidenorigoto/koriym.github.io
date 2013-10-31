@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Advent Day 1: include - BEAR Blog</title>
+  <meta name="author" content="Akihito Koriyama">
+
+  
+  <meta name="description" content="Tweet include include (PHP 4, PHP 5) include 文は指定されたファイルを読み込み、評価します。 &#8220;値の返し方: include に失敗したときには FALSE を返し、警告を発生させます。 成功した場合の返り値は、 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://koriym.github.io/adv1">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="BEAR Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">BEAR Blog</a></h1>
+  
+    <h2>Because everything is a resource</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:koriym.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Advent Day 1: Include</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-03T00:00:00+09:00" pubdate data-updated="true">Dec 3<span>rd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><div style="float: right; margin-left: 10px;">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/adv1">Tweet</a>
+</div>
+
+
+<h2>include</h2>
+
+<blockquote><p><strong>include</strong></p>
+
+<p>(PHP 4, PHP 5)</p>
+
+<p>include 文は指定されたファイルを読み込み、評価します。</p></blockquote>
+
+<p><em>&#8220;値の返し方: include に失敗したときには FALSE を返し、警告を発生させます。 成功した場合の返り値は、インクルードしたファイル側で変更していない限りは 1 です。 インクルードしたファイルの中で return を実行すれば、 そのファイルの処理をそこで止めて呼び出し元に処理を戻せます。 &#8220;</em></p>
+
+<p>このようにinculude/requireはクラスや関数を定義するだけでなく、そのファイルの中で生成した変数を渡す事ができます。BEAR.Sundayではこの機能を使ってインスタンスの取得を行っています。</p>
+
+<h2>bootstrap時のインスタンス取得</h2>
+
+<p>インスタンスの取得には様々な方法があります。</p>
+
+<ul>
+<li>new演算子</li>
+<li>サービスクラスでインスタンス提供メソッド利用（getInstance() / factory()等）</li>
+<li>Factoryクラス利用</li>
+<li>オブジェクトコンテナからの取得 (SL)</li>
+<li>Dependency Injectorによる注入 (DI)</li>
+<li>上記includeを利用</li>
+</ul>
+
+
+<p>アプリケーションのbootstrapの時にはまだSLやDIの機能の準備はできていません。アプリケーションはbootしたばかりで関心の分離もこれからです。このような場合にincludeでのインスタンス取得が有効だと考えました。</p>
+
+<h2>SLやDIとの共通点</h2>
+
+<p>includeによるインスタンス取得は単純です。<a href="http://www.bear-project.net/blog/2012/05/dip%EF%BC%9Adependency-inversion-principle/">DIP原則</a>にも従いませんが<strong>「インスタンスの生成をクライアント、およびサービスクラスがが関与しない」</strong>というDIがもつ機能との共通点があります。</p>
+
+<p>そのインスタンスはsingletonなのかprototypeなのか、どのようなオブジェクトにより構成されてるのかといオブジェクトの構成知識はクライアントに必要ありません。インスタンス提供メソッドを用意する方法と違い構成が変わってもサービスクラスにも変更はありません。</p>
+
+<p>専用Factoryクラスを用意するとクライアント／サービスクラスに構成知識が不要という点は同じですが、より簡易な記述になり利用も簡単です。</p>
+
+<h2>Aura Framework</h2>
+
+<p><a href="http://auraphp.github.com/">Aura Framework</a>はそれぞれのライブラリのインスタンスはスクリプトで取得することができます。実用的であると同時にインスタンス生成方法の実例にもなっています。例<a href="https://github.com/auraphp/Aura.Signal/blob/develop/scripts/instance.php"> Aura.Signal</a>、<a href="https://github.com/auraphp/Aura.Filter/blob/develop/scripts/instance.php">Aura.Filter</a></p>
+
+<p>BEAR.Sundayでは開発当初から様々なフレームワークのbest practiceを取り込みたいと考えてますがinclude文によるインスタンスの取得、およびその位置の固定化(scripts/instance.php)もその一環です。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-03T00:00:00+09:00" pubdate data-updated="true">Dec 3<span>rd</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/advent2012/'>Advent2012</a>, <a class='category' href='/blog/categories/bear/'>BEAR</a>, <a class='category' href='/blog/categories/php/'>PHP</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://koriym.github.io/adv1" data-via="" data-counturl="http://koriym.github.io/adv1" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/adv3" title="Previous Post: Advent Day 3:  Dependency Carrying">&laquo; Advent Day 3:  Dependency Carrying</a>
+      
+      
+        <a class="basic-alignment right" href="/adv4" title="Next Post: Advent Day 4: Manual DI">Advent Day 4: Manual DI &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/09/bear-sunday-england-tour-2013/">BEAR.Sunday England Tour 2013</a>
+      </li>
+    
+      <li class="post">
+        <a href="/pear">PEAR</a>
+      </li>
+    
+      <li class="post">
+        <a href="/first-di-framework">Ray.Tutorial &#8211; First DI Framework</a>
+      </li>
+    
+      <li class="post">
+        <a href="/ray-tutorial-introduction">Ray.Tutorial &#8211; Introduction</a>
+      </li>
+    
+      <li class="post">
+        <a href="/bearsunday_meetup2">BEAR.Sunday Meetup #2</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Akihito Koriyama -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
