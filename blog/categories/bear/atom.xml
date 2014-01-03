@@ -4,7 +4,7 @@
   <title><![CDATA[Category: BEAR | BEAR Blog]]></title>
   <link href="http://koriym.github.io/blog/categories/bear/atom.xml" rel="self"/>
   <link href="http://koriym.github.io/"/>
-  <updated>2013-10-31T22:15:53+09:00</updated>
+  <updated>2014-01-02T02:07:10+09:00</updated>
   <id>http://koriym.github.io/</id>
   <author>
     <name><![CDATA[Akihito Koriyama]]></name>
@@ -12,6 +12,91 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[PHPNW 2013]]></title>
+    <link href="http://koriym.github.io/blog/2013/12/31/phpnw2013/"/>
+    <updated>2013-12-31T11:21:00+09:00</updated>
+    <id>http://koriym.github.io/blog/2013/12/31/phpnw2013</id>
+    <content type="html"><![CDATA[<p>2013年、BEAR.Sundayにとって最大のイベントはイギリスでセッションを行った事です。</p>
+
+<h2>20 June; CFP (Call for Paper)</h2>
+
+<p>phpnwカンファレンスでスピーカーとして参加す為には<a href="http://conference.phpnw.org.uk/phpnw13/call-papers/">CFP</a>が必要です。
+単に「自分の興味ある技術的な話をします」ではなく“why we should accept your talk” （なぜ主催者が自分の応募を採用するのか）という事を伝えなければなりません。
+以下のようにタイトルを３つ考え、そのタイトルに沿った詳細な紹介文をリチャードさんに用意してもらって応募しました。</p>
+
+<ul>
+<li>API driven development for API driven World</li>
+<li>Think differently, REST centric approach solve REST problem effectively.</li>
+<li>A resource orientated framework using the DI /AOP/REST Triangle</li>
+</ul>
+
+
+<blockquote><p>Many web developers have a REST or API part of their app when offering it as a service. In this session I will show you how in making REST a central part of your design you can have a huge amount of consistency at the core of how you code. REST gives us much of the power we need in development and is not just for API&rsquo;s. This session will completely change the way you think about REST.
+BEAR.Sunday is a REST-centric framework that makes you think totally different about how to go about architecting web-apps and platforms to the maximum potential with elegance.</p></blockquote>
+
+<h2>03 July; 採用</h2>
+
+<p>採用の返事が来たのは7月4日。夏期休暇でスイスを友人とレンタカーでドライブをしてた時に連絡がありました。</p>
+
+<blockquote><p>We were delighted to hear from you and we would love to extend an invitation for you to give your talk &ldquo;A resource orientated framework using the DI /AOP/REST Triangle&rdquo; at our conference.</p></blockquote>
+
+<p>採用された事に驚きました。そして今スイスにいるのにまた三ヶ月後にイギリス！？とも思いましたが、友人は「行くしか無い、他の選択肢はない」とはっきり言い切ります。
+英語のプレゼンも、舞台の大きさも、完全に自分のキャパを超えてましたが腹を決め渡英するとの連絡をしました。</p>
+
+<p>採用のプロセスは非常に厳しいもので、キュレーターが４人いてその全ての人の採点が10点中の9か10が必要、採用率は15%以下の狭き門です。
+技術レベルは三段階の最上位での応募。「基本的にフレームワーク選択の話に興味はない」との事で応募はかなり無謀だったのですが、一緒に発表をするリチャードさんのクレジットもあり採用されました。
+３つのトラックが同時進行して、ホールは大中小の大きさがあります。選ばれたのはキャパ100人程度の真ん中の大きさのホールでした。</p>
+
+<h2>28 Sep; @leedsphp ユーザーグループとBBC</h2>
+
+<p>どうせ渡英して話すならと地元のユーザーグループの勉強会と(leedsphp)とリチャードさんが働くBBCでもセッションを持つ事になりました。いわば大舞台のphpnwのカンファレンスの練習です。
+日本の勉強会のようなものですが、流石イギリスというか場所が雰囲気ありありです。手元の書類が見えにくいぐらい照明を落としたところで最初のスピーチをしました。
+機材トラブルもあり、スピーチそのものできはあまり良くなかったのですがかなりの熱を持って聞いてもらう事ができました。日本と違って、トークが終わると基本すぐに解散らしいのですが質問も多く「こういう反応は今まで見た事がない」反応だったそうです。</p>
+
+<p>BBCでの経験は驚きの連続です。世界最高のメディア企業でのWebプロダクト制作、その現場です。
+とにかくかっこよくて、詳しい事が書けないのは残念です。一日始業から終わりまでインターンのように過ごす機会にも恵まれその現場の空気やワークフローの実際に立ち会う事ができました。
+シニアアーキテクトの方とのランチの機会も頂いきました。</p>
+
+<p>ほとんどの時間はBEAR.Sundayについての質問とその答えというやり取りになりました。質問が非常にシャープで的確です。「そのアーキテクチャのポイントを、ノンテクニカルな人に3分で伝えるとしたらどう話す？」等、こちらが試されるような質問の連続です。真剣な質問に真剣に答えます。「ただのおしゃべり」と聞いてたのはランチは熱のある「ランチピッチ」になりました。</p>
+
+<h2>phpnw13</h2>
+
+<h3>02 Oct; Hackason</h3>
+
+<p>カンファレンスの前日金曜は昼間はチュートリアル、夜はハッカソンがあります。ハッカソンと言っても日本のものと違って何かを個人で制作して発表するとかではありません。
+例えば「PHP-Excel」とか並んでいるテーブルにプレートがあるので、自分の強力したいオープンソースのテーブルに加わりコーディングしたりおしゃべりをしたりするのです。終わる時に特別発表もありません。
+カンファレンスの前日のソーシャルな時間とも思えました。@leedsphpで知り合った人達にも会え、色々話す事ができました。</p>
+
+<h3>03 Oct; 発表の日</h3>
+
+<p>セッション1時間前に「speaker shadowです」１人のスタッフが現れましす。どうもスピーカーの世話をする人の事をshadowというようです。
+スピーカーに対するケアがとても手厚いのです。phpnwは有料カンファレンスで、チケットは£135.00（現在12/31のレートで23,430円）します。
+スピーカーに報酬はありませんが、滞在中の食事や宿泊費は全て賄われます。ホテルの部屋にはエッセンシャルキットと言って、ミネラルウォーターや洗面道具のキットのwelcomeセットのようなものが部屋に用意されています。
+スピーカーだけにトレーナーやギフトもありました。食事は例えば、スピーカーディナーはコース料理なのですがそのメニューは事前にwebで注文しておく事ができ、例えばベジタリアンの人などへの配慮もあります。</p>
+
+<p>賄われるということより、スピーカー同士の交流が図られるという事が大事です。食事の度に顔を合わせて一緒に話したりするので自然と交流が持て色々な話が聞けます。これは貴重です。
+海外ではどのようなフレームワークが使われてるか、Google TrendやGitHubのスターで語られる事がありますが、自分の興味は「誰が」選んでいるか？ということです。
+その視点をかいた比較や、多数の初心者に好まれるものよりこういったカンファレンスに登壇する人達、つまりアーキテクトやシニアディベロッパーの方々が何を基準にどういうものを選んでいるのかに興味があります。
+スピーカーになるという事はそういう一時情報に直接関われるということでもありました。</p>
+
+<p>「フレームワーク選択の話題にみんな興味がない」..これは聞いていました。また予想もたててみました。「欧州なのでまあSymfonyが最初に来てそれに続いてzf2、あとはまとめて"その他"、そして恐らく思われてるより自社製フレームワークは多いだろう」
+..そしてこの予想は当たらずとも遠からず（個人の印象です）でした。日本でよく話題になるFWの話は全くでてきません、「どのようなFWが流行ってるか、あるいは流行りそうか」そんな事を話題にする人はいませんでした。</p>
+
+<p>それに思ったよりずっと自社製のFWが多い。これはカンファレンスの内容にも反映されていたと思うのですが、新しいアーキテクチャを模索する動きも感じました。</p>
+
+<p>多様化する開発ニーズのためのそれぞれのドメインのフレームワークを構築する。モノシリックで巨大な１つの解答（ソリューション）より、構成可能で持続的な部品の疎結合の要求、継続可能性、それらの欲求を満たすアーキテクチャの模索、そういう事を感じました。
+(※私はBEAR.Sundayの開発者でそのbiasがかかってるのに注意）</p>
+
+<p>いよいよ、時間が近づいてきました。
+前のセッションはDrupal。世界のPHP開発者の誰もが知るプロダクトでスピーカーはその制作者、立ち見がでるくらい満員です。</p>
+
+<p>その次が自分の番、世界の誰も知らない「僕のつくったフレームワーク」の発表です。</p>
+
+<p> &hellip;（続く）</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[BEAR.Sunday England Tour 2013]]></title>
@@ -924,53 +1009,6 @@ Dependency injection means giving an object its instance variables. Really. That
 
 
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[BEAR.Sunday meetup #2]]></title>
-    <link href="http://koriym.github.io/bearsunday_meetup2"/>
-    <updated>2013-07-30T00:00:00+09:00</updated>
-    <id>http://koriym.github.io/bear-sunday-meetup-2</id>
-    <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/bearsunday_meetup2">Tweet</a>
-</div>
-
-
-
-
-<div>
-  <a href="http://www.bear-project.net/blog/wp-content/uploads/2013/07/723d615e8befaad76f94aebd6688651a.png"><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/07/723d615e8befaad76f94aebd6688651a-1024x776.png" alt="BEAR.Sunday meetup #2 2013-07-28 3.06.12" class="size-large wp-image-1970" /></a>
-    <a href="http://www.bear-project.net/blog/wp-content/uploads/2013/07/IMG_8334.jpg"><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/07/IMG_8334-1024x768.jpg" alt="IMG_8334" class="size-large wp-image-1976" /></a> </div>
-
-
-<pre><code>&gt;
-  Meetup
-&lt;/h2&gt;
-</code></pre>
-
-<h2>Meetup</h2>
-
-<p> BEAR.Sunday meetup#2を開催しました。</p>
-
-<p> 学習より交流、啓蒙というよりアイデアの交換、勉強会というよりmeetup、そういう風に今回はよりmeetupらしくしようとドリンクタイムと全員LTから始めました。場所は秘密基地の雰囲気ただようHubTokyoラウンジスペース。</p>
-
-<p> LTの順番もリストされたものではなくて、関連がありそうだったりその場の雰囲気だったりで手を上げ「じゃ次やりますー」と前に出て３分という短い時間で自分の考えや視点を中心に話します。役に立つ話である必要はないし、結論でさえ不要です。</p>
-
-<p> 普段プライベートに持っている個人の考えや問いかけがパブリックになって、刺激を受けるというのは面白いです。</p>
-
-<p> 土曜日らしいゆっくりした雰囲気で始まったmeetupは、セッションを時々挟みながら、しかしあくまでフリータイム中心に進みます。</p>
-
-<h2>Resource Oriented X</h2>
-
-<p> サプライズでLithiumのリードデベロッパーで来日中のnateさんが遊びに来てくれ、公演までして行ってくれました。BEAR.Sundayはリソース指向のフレームワークですが、このnateさんの公演内容はリソース指向のアプリケーション（with Lithium &amp; AunguraJS）です。</p>
-
-<p> 最新技術の最新アプリケーションに圧倒されつつ、「リソース指向」のシンクロニシティにエキサイトしました。</p>
-
-<h2>Arigato</h2>
-
-<p>遠く大阪や岐阜から訪れてくれた人も「来たかいがあった」と満足して帰られたのではないでしょうか。Nateさんのサプライズもあったし会場も雰囲気も食事も全部良かった。良いmeetupになったと思ってます。緩く始まりドンドン濃くなっていって、最後にドーンとRichardさんとNateさんの花火のようなプレゼンテーションに達成感すら感じました。meetup最後の@haltさんのtweet「すごい密度で疲れたああああ！」..同意です。
-小さな集まりですが、質の高い時間を共有できるように私たちスタッフは力を尽くしました。<a href="https://twitter.com/kuma_nana">@kuma_nana</a> <a href="https://twitter.com/zingooo">@zingooo</a> <a href="https://twitter.com/zukimochi">@zukimochi</a> ありがとうありがとう。 トークをしてくれた 神宮君、Richardさん、Nateさん、それにLT&amp;参加してくれた全ての人、スポンサード頂いた<a href="http://hubtokyo.com/">HubTokyo</a>、<a href="http://webster.jp/">Webster</a>、LT「Tech for Social Good 」の明石君にも感謝です。</p>
 ]]></content>
   </entry>
   

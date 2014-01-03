@@ -4,7 +4,7 @@
   <title><![CDATA[BEAR Blog]]></title>
   <link href="http://koriym.github.io/atom.xml" rel="self"/>
   <link href="http://koriym.github.io/"/>
-  <updated>2013-10-31T22:15:53+09:00</updated>
+  <updated>2014-01-02T02:07:10+09:00</updated>
   <id>http://koriym.github.io/</id>
   <author>
     <name><![CDATA[Akihito Koriyama]]></name>
@@ -12,6 +12,91 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[PHPNW 2013]]></title>
+    <link href="http://koriym.github.io/blog/2013/12/31/phpnw2013/"/>
+    <updated>2013-12-31T11:21:00+09:00</updated>
+    <id>http://koriym.github.io/blog/2013/12/31/phpnw2013</id>
+    <content type="html"><![CDATA[<p>2013年、BEAR.Sundayにとって最大のイベントはイギリスでセッションを行った事です。</p>
+
+<h2>20 June; CFP (Call for Paper)</h2>
+
+<p>phpnwカンファレンスでスピーカーとして参加す為には<a href="http://conference.phpnw.org.uk/phpnw13/call-papers/">CFP</a>が必要です。
+単に「自分の興味ある技術的な話をします」ではなく“why we should accept your talk” （なぜ主催者が自分の応募を採用するのか）という事を伝えなければなりません。
+以下のようにタイトルを３つ考え、そのタイトルに沿った詳細な紹介文をリチャードさんに用意してもらって応募しました。</p>
+
+<ul>
+<li>API driven development for API driven World</li>
+<li>Think differently, REST centric approach solve REST problem effectively.</li>
+<li>A resource orientated framework using the DI /AOP/REST Triangle</li>
+</ul>
+
+
+<blockquote><p>Many web developers have a REST or API part of their app when offering it as a service. In this session I will show you how in making REST a central part of your design you can have a huge amount of consistency at the core of how you code. REST gives us much of the power we need in development and is not just for API&rsquo;s. This session will completely change the way you think about REST.
+BEAR.Sunday is a REST-centric framework that makes you think totally different about how to go about architecting web-apps and platforms to the maximum potential with elegance.</p></blockquote>
+
+<h2>03 July; 採用</h2>
+
+<p>採用の返事が来たのは7月4日。夏期休暇でスイスを友人とレンタカーでドライブをしてた時に連絡がありました。</p>
+
+<blockquote><p>We were delighted to hear from you and we would love to extend an invitation for you to give your talk &ldquo;A resource orientated framework using the DI /AOP/REST Triangle&rdquo; at our conference.</p></blockquote>
+
+<p>採用された事に驚きました。そして今スイスにいるのにまた三ヶ月後にイギリス！？とも思いましたが、友人は「行くしか無い、他の選択肢はない」とはっきり言い切ります。
+英語のプレゼンも、舞台の大きさも、完全に自分のキャパを超えてましたが腹を決め渡英するとの連絡をしました。</p>
+
+<p>採用のプロセスは非常に厳しいもので、キュレーターが４人いてその全ての人の採点が10点中の9か10が必要、採用率は15%以下の狭き門です。
+技術レベルは三段階の最上位での応募。「基本的にフレームワーク選択の話に興味はない」との事で応募はかなり無謀だったのですが、一緒に発表をするリチャードさんのクレジットもあり採用されました。
+３つのトラックが同時進行して、ホールは大中小の大きさがあります。選ばれたのはキャパ100人程度の真ん中の大きさのホールでした。</p>
+
+<h2>28 Sep; @leedsphp ユーザーグループとBBC</h2>
+
+<p>どうせ渡英して話すならと地元のユーザーグループの勉強会と(leedsphp)とリチャードさんが働くBBCでもセッションを持つ事になりました。いわば大舞台のphpnwのカンファレンスの練習です。
+日本の勉強会のようなものですが、流石イギリスというか場所が雰囲気ありありです。手元の書類が見えにくいぐらい照明を落としたところで最初のスピーチをしました。
+機材トラブルもあり、スピーチそのものできはあまり良くなかったのですがかなりの熱を持って聞いてもらう事ができました。日本と違って、トークが終わると基本すぐに解散らしいのですが質問も多く「こういう反応は今まで見た事がない」反応だったそうです。</p>
+
+<p>BBCでの経験は驚きの連続です。世界最高のメディア企業でのWebプロダクト制作、その現場です。
+とにかくかっこよくて、詳しい事が書けないのは残念です。一日始業から終わりまでインターンのように過ごす機会にも恵まれその現場の空気やワークフローの実際に立ち会う事ができました。
+シニアアーキテクトの方とのランチの機会も頂いきました。</p>
+
+<p>ほとんどの時間はBEAR.Sundayについての質問とその答えというやり取りになりました。質問が非常にシャープで的確です。「そのアーキテクチャのポイントを、ノンテクニカルな人に3分で伝えるとしたらどう話す？」等、こちらが試されるような質問の連続です。真剣な質問に真剣に答えます。「ただのおしゃべり」と聞いてたのはランチは熱のある「ランチピッチ」になりました。</p>
+
+<h2>phpnw13</h2>
+
+<h3>02 Oct; Hackason</h3>
+
+<p>カンファレンスの前日金曜は昼間はチュートリアル、夜はハッカソンがあります。ハッカソンと言っても日本のものと違って何かを個人で制作して発表するとかではありません。
+例えば「PHP-Excel」とか並んでいるテーブルにプレートがあるので、自分の強力したいオープンソースのテーブルに加わりコーディングしたりおしゃべりをしたりするのです。終わる時に特別発表もありません。
+カンファレンスの前日のソーシャルな時間とも思えました。@leedsphpで知り合った人達にも会え、色々話す事ができました。</p>
+
+<h3>03 Oct; 発表の日</h3>
+
+<p>セッション1時間前に「speaker shadowです」１人のスタッフが現れましす。どうもスピーカーの世話をする人の事をshadowというようです。
+スピーカーに対するケアがとても手厚いのです。phpnwは有料カンファレンスで、チケットは£135.00（現在12/31のレートで23,430円）します。
+スピーカーに報酬はありませんが、滞在中の食事や宿泊費は全て賄われます。ホテルの部屋にはエッセンシャルキットと言って、ミネラルウォーターや洗面道具のキットのwelcomeセットのようなものが部屋に用意されています。
+スピーカーだけにトレーナーやギフトもありました。食事は例えば、スピーカーディナーはコース料理なのですがそのメニューは事前にwebで注文しておく事ができ、例えばベジタリアンの人などへの配慮もあります。</p>
+
+<p>賄われるということより、スピーカー同士の交流が図られるという事が大事です。食事の度に顔を合わせて一緒に話したりするので自然と交流が持て色々な話が聞けます。これは貴重です。
+海外ではどのようなフレームワークが使われてるか、Google TrendやGitHubのスターで語られる事がありますが、自分の興味は「誰が」選んでいるか？ということです。
+その視点をかいた比較や、多数の初心者に好まれるものよりこういったカンファレンスに登壇する人達、つまりアーキテクトやシニアディベロッパーの方々が何を基準にどういうものを選んでいるのかに興味があります。
+スピーカーになるという事はそういう一時情報に直接関われるということでもありました。</p>
+
+<p>「フレームワーク選択の話題にみんな興味がない」..これは聞いていました。また予想もたててみました。「欧州なのでまあSymfonyが最初に来てそれに続いてzf2、あとはまとめて&#8221;その他&#8221;、そして恐らく思われてるより自社製フレームワークは多いだろう」
+..そしてこの予想は当たらずとも遠からず（個人の印象です）でした。日本でよく話題になるFWの話は全くでてきません、「どのようなFWが流行ってるか、あるいは流行りそうか」そんな事を話題にする人はいませんでした。</p>
+
+<p>それに思ったよりずっと自社製のFWが多い。これはカンファレンスの内容にも反映されていたと思うのですが、新しいアーキテクチャを模索する動きも感じました。</p>
+
+<p>多様化する開発ニーズのためのそれぞれのドメインのフレームワークを構築する。モノシリックで巨大な１つの解答（ソリューション）より、構成可能で持続的な部品の疎結合の要求、継続可能性、それらの欲求を満たすアーキテクチャの模索、そういう事を感じました。
+(※私はBEAR.Sundayの開発者でそのbiasがかかってるのに注意）</p>
+
+<p>いよいよ、時間が近づいてきました。
+前のセッションはDrupal。世界のPHP開発者の誰もが知るプロダクトでスピーカーはその制作者、立ち見がでるくらい満員です。</p>
+
+<p>その次が自分の番、世界の誰も知らない「僕のつくったフレームワーク」の発表です。</p>
+
+<p> &hellip;（続く）</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[BEAR.Sunday England Tour 2013]]></title>
@@ -2588,73 +2673,6 @@ composerのcreate-projectでインストールできるようになりました�
 当初予定してた今年中のリリースは難しいですが、来年明けの早い段階でと考えてます。</p>
 
 <p>次の<a href="http://atnd.org/events/34068">Symfony勉強会 #7 (BEAR.Sundayワークショップ＆忘年会) 2012/12/15(Sun)</a>ではこの0.5.5を使います。よろしく御願いします。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Advent Day 6: DI SoC]]></title>
-    <link href="http://koriym.github.io/2012/12/advent-day-6-di-soc/"/>
-    <updated>2012-12-10T00:00:00+09:00</updated>
-    <id>http://koriym.github.io/2012/12/advent-day-6-di-soc</id>
-    <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/2012/12/advent-day-6-di-soc/">Tweet</a>
-</div>
-
-
-<h2>関心の分離としてのDI</h2>
-
-<blockquote><p>オブジェクトは、他のオブジェクトの生成か、使用のいずれかのみを行い、双方を行ってはならない。<br/>
-&#8212; <a href="http://d.hatena.ne.jp/asakichy/20090331/1238472501#20090331f1">生成・使用分離の原則 &#8211; Strategic Choice</a></p>
-
-<p>Eric Raymondは『Art of UNIX Programming』の中で、UNIX®哲学の幾つかを次のように指摘しています。</p>
-
-<p>モジュラー化の原則: 単純な部分を書き、きれいなインターフェースで接続する<br/>
-分離の原則: ポリシーを機構から分離し、インターフェースをエンジンから分離する<br/>
-表現の原則: ナレッジをデータの中に入れ込むことによって、プログラム・ロジックは愚かで堅牢となるようにする</p>
-
-<p>こうした考え方は古いものですが、私達は、こうした考えをJava™技術で実現するための新しい方法を発見し続けているのです。そして<strong>分離のための技術の最新版</strong>、DI（dependency injection: 依存性注入）は、上記の理想を反映したものです。</p>
-
-<p><a href="https://www.ibm.com/developerworks/jp/opensource/library/os-ag-ioc1/">https://www.ibm.com/developerworks/jp/opensource/library/os-ag-ioc1/</a></p></blockquote>
-
-<h2>生成・使用分離の原則</h2>
-
-<p>生成・使用分離の原則 &#8211; 時々聞くこの原則のそもそものソースは何だろうかと時々調べる事がありますが、それに巡り会えたことがありません。ついに見つけたのが流石Strategic Choiceブログなのですが、記事によると<strong>「<a href="http://d.hatena.ne.jp/asakichy/20090331/1238472501#20090331f1">名前がなかったので勝手につけました</a>」</strong>&#8230;どうりで中々見つからないわけです。</p>
-
-<p>しかし記事は明快です。</p>
-
-<blockquote><p>どうして？</p>
-
-<p>この規則に従えば、作業分担が明確化され、結合度が低下する。</p>
-
-<p>オブジェクトの使用は概念レベルを取り扱う。<br/>
-オブジェクトの生成は具象レベルを取り扱う。<br/>
-これらレベルの違うものを混ぜて設計すべきではない。<br/>
-これらを分けて考えることで、それぞれに集中できる。</p></blockquote>
-
-<p>大変重要です。つまりこれが良く分離されたソースコードでは「概念レベルを取り扱う」ものと「具象レベルを取り扱う」コードが分離されています。</p>
-
-<p>[具象コード]<br/>
-[具象コード]<br/>
-[具象コード]</p>
-
-<p>[概念コード]<br/>
-[概念コード]<br/>
-[概念コード]</p>
-
-<p>良いコード。これが分離されレイヤーになっています。対してその逆では..</p>
-
-<p>[具象コード]<br/>
-[具象コード]<br/>
-[概念コード]<br/>
-[具象コード]<br/>
-[具象コード]<br/>
-[概念コード]</p>
-
-<p>クリアに説明されるとスッキリします。この善し悪しはイメージしやすいのではないでしょうか。ソースの可読性はスコープを狭くして細かく語られることも多いですが、このように大きなスコープでの設計原則が守られてるかという事も大事なのではないかと考えます。</p>
-
-<p>DIの説明を時々料理に例えることがあります。レシピを見て、材料を揃え下ごしらえを済ませてから調理（runtime)に移ります。調理中には途中で材料を選んだり買い物をしなおしたりすることはありません。道具の準備や下ごしらを完了してから調理に移ります。準備と利用は分離され、分業も可能です。</p>
-
-<p>BEAR.Sundayでもruntimeでは原則オブジェクトは用意されたものを利用するだけで、生成に関しての関心は極小化されています。runtimeでオブジェクトの生成方法をアプリケーションワイドなconfigから調べ作成する事は原則ありません。</p>
 ]]></content>
   </entry>
   
